@@ -71,10 +71,10 @@ header{display:grid;grid-template-columns:1fr auto;gap:2rem;align-items:end;padd
 
 /* ── EXPERIENCE ── */
 .exp{margin-bottom:1.75rem}
-.exp-head{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:.3rem}
+.exp-head{display:grid;grid-template-columns:1fr auto;gap:1rem;align-items:baseline;margin-bottom:.4rem}
 .exp-role{font-weight:500;font-size:.95rem}
 .exp-co{color:var(--accent);font-size:.88rem}
-.exp-period{font-family:var(--mono);font-size:.68rem;color:var(--muted)}
+.exp-period{font-family:var(--mono);font-size:.68rem;color:var(--muted);white-space:nowrap}
 .exp-desc{font-size:.83rem;color:#444;margin:.4rem 0;line-height:1.8}
 .exp-bullets{list-style:none;padding:0}
 .exp-bullets li{font-size:.82rem;color:#444;padding:.2rem 0 .2rem 1rem;position:relative;line-height:1.7}
@@ -83,14 +83,14 @@ header{display:grid;grid-template-columns:1fr auto;gap:2rem;align-items:end;padd
 /* ── PROJECT TABLE ── */
 .proj-table{width:100%;border-collapse:collapse;font-size:.82rem}
 .proj-table td{padding:.6rem .75rem;border-bottom:.5px solid var(--mid);vertical-align:top}
-.proj-table .brand{font-weight:500;color:var(--accent);width:100px;white-space:nowrap}
+.proj-table .brand{font-weight:500;color:var(--accent);width:90px;white-space:nowrap;vertical-align:top}
 .proj-table tr:last-child td{border-bottom:none}
 
 /* ── SKILLS ── */
-.skills-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:.75rem}
+.skills-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:.75rem;min-width:0}
 .skill-box{background:var(--white);border:.5px solid var(--mid);border-radius:6px;padding:.9rem 1rem}
 .skill-cat{font-family:var(--mono);font-size:.65rem;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);margin-bottom:.6rem}
-.skill-items{font-size:.78rem;color:#444;line-height:2}
+.skill-items{font-size:.78rem;color:#444;line-height:2;word-break:keep-all;overflow-wrap:break-word}
 
 /* ── FOOTER ── */
 footer{margin-top:3rem;padding-top:1.5rem;border-top:.5px solid var(--mid);font-family:var(--mono);font-size:.65rem;color:var(--muted);letter-spacing:.08em;text-align:center}
